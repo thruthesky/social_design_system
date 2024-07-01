@@ -209,7 +209,6 @@ class ComicThemeData {
         ),
       ),
       dividerTheme: theme.dividerTheme.copyWith(
-        // TODO check the default color
         color: theme.colorScheme.outline,
         thickness: borderThickness,
       ),
@@ -250,8 +249,6 @@ class ComicThemeData {
       ),
 
       floatingActionButtonTheme: FloatingActionButtonThemeData(
-        // TODO check the default color
-        // backgroundColor: theme.colorScheme.surface,
         elevation: 0,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(24),
@@ -342,7 +339,6 @@ class ComicThemeData {
       navigationBarTheme: theme.navigationBarTheme.copyWith(
         labelTextStyle: WidgetStateProperty.resolveWith((states) {
           if (states.contains(WidgetState.selected)) {
-            // TODO check if we can use something like theme.textTheme.labelSmall.copyWith(fontWeight: FontWeight.w800)
             return TextStyle(
               fontSize: 12,
               fontWeight: FontWeight.w800,
@@ -465,7 +461,7 @@ class ComicThemeData {
           // NOTE: Shape is not working here.
           side: WidgetStatePropertyAll(
             BorderSide(
-              // TODO this might be a wrong way to do it.
+              // Please review this might be a wrong way to do it.
               // because in flutter way, to set the color scheme, we can usually set
               // it thru copyWith, then set the color scheme.
               // Here, it is accessing the outline color from the theme variable.

@@ -83,7 +83,7 @@ class SleekThemeData {
       ),
 
       cardTheme: theme.cardTheme.copyWith(
-        // TODO fix it with proper colorscheming
+        // Please review
         // this color uses `surfaceContainerLow` from color scheme by default
         // and the variant card.filled uses`surfaceContainerHigh` from color
         // scheme by default
